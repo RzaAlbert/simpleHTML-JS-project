@@ -1,0 +1,13 @@
+{
+  "phones": [
+        {"id":1,"name": "Samsung S9 +","price":1399,"amount":120},
+         {"id":2,"name": "Nokia 3310","price":5399,"amount":134},
+		{"id":3,"name": "Iphone 13 mini","price":2399,"amount":162},
+		 {"id":4,"name": "Iphone 11 +","price":3399,"amount":64},
+		 {"id":5,"name": "Samsung S20","price":4399,"amount":22},
+		 {"id":6,"name": "Sony Ericsson K550i","price":2299,"amount":12},
+		 {"id":7,"name": "Samsung Avilla","price":999,"amount":167},
+		 {"id":8,"name": "Samsung S21 Super Pro Plus Supreme","price":3399,"amount":42}
+	]
+}
+   

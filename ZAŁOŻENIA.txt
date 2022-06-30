@@ -1,0 +1,34 @@
+/////1. Strona z telefonami
+
+
+2.Bar nawigacyjny z podstronami
+	///////-strona glowna
+	-o nas
+	-przeglad telefonow
+	-najpopularniejsze marki telefonow 
+	-zamow telefon
+
+3.Formularz do zamówienia
+
+
+4.Wykres najpopularniejszych marek telefonow 
+
+
+5.Galeria ze zdjeciami wybranych modeli (jQuery)
+
+
+6.Walidacja w java scprit
+
+
+7.Dane z formularza zapisywanie do local/session storage
+
+
+8.Aby uzyskać maksymalną liczbę punktów za projekt końcowy - aplikacja powinna
+dodatkowo modyfikować wybrane fragmenty strony za pomocą treści wczytywanych
+z plików na serwerze w trybie asynchronicznym, najlepiej za pomocą interfejsu Fetch
+API.
+
+9.Walidacja na 100 pro
+
+/10.Responsywna
+

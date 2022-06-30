@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Sklep eGSM</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="slide/slide1.css" />
+		<link rel="stylesheet" href="strona_glowna.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script  src="slide/slide.js"></script>
+		<script  src="scripts.js"></script>
+</head>
+
+
+<body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Formularz zamówienia</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="strona_glowna.html">Strona główna</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="przeglad_produktow.html">Przegląd produktów</a>
+        <li class="nav-item">
+          <a class="nav-link" href="zamow_telefon_formularz.html">Zamów telefon</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="wykres.html">Wykres popularności danych marek</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="card">
+	<div class="card-body">
+    <h1>Formularz zamówienia:</h1>
+	</div>
+</div>
+
+<form onsubmit="zapis()">
+  <div class="row bg-dark text-light mx-0">
+    <div class="row>
+    <div class="col mb-3">
+      <label for="imie">Imię</label>
+      <input type="text" class="form-control" id="imie" placeholder="Mariusz" value="" maxlength="32" required pattern="^([a-zA-Z '-]+)$">
+  
+    </div>
+    <div class="col  mb-3">
+      <label for="nazwisko">Nazwisko</label>
+      <input type="text" class="form-control" id="nazwisko" placeholder="Kowalski" value="" pattern="^([a-zA-Z '-]+)$" required>
+     
+    </div>
+  </div>
+   <div class="row bg-dark text-light mx-0">
+      <div class="col mb-3">
+        <label for="phone">Numer telefonu</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroupPrepend">+48</span>
+          </div>
+          <input type="text"  class="form-control" id="telefon"  pattern="[0-9]{9}" placeholder="777777777" aria-describedby="inputGroupPrepend" required>
+          <div class="invalid-feedback">
+            Podaj numer telefonu
+          </div>
+        </div>
+      </div>
+  </div>
+  
+   <div class="row bg-dark text-light mx-0">
+    <div class="col mx-0 mb-3">
+	 <label for="street">Miasto</label>
+      <select class="form-select" aria-label="Default select example" id="miasto">
+  <option selected>Miasto</option>
+  <option value="Lublin">Lublin</option>
+  <option value="Warszawa">Warszawa</option>
+  <option value="Kraków">Kraków</option>
+		</select>
+      </div>
+    <div class="col  mx-0 mb-3">
+      <label for="street">Ulica</label>
+      <input type="text" class="form-control" id="ulica" placeholder="Ulica" required>
+    </div>
+  </div>
+ <div class="row bg-dark text-light mx-0 ">
+    <div class="col mx-0">
+	Wybrany model telefonu:
+      <input class="form-check-input" type="checkbox" value="Samsung S9 +" id="a" >
+      Samsung S9 +
+	  <input class="form-check-input" type="checkbox" value="Nokia 3310" id="b" >
+      Nokia 3310
+	  <input class="form-check-input" type="checkbox" value="Iphone 13 mini" id="c" >
+      Iphone 13 mini
+	  <input class="form-check-input" type="checkbox" value="Iphone 11 +" id="d" >
+      Iphone 11 +
+	  <input class="form-check-input" type="checkbox" value="Samsung S20" id="e" >
+      Samsung S20
+	  <input class="form-check-input" type="checkbox" value="Sony Ericsson K550i" id="f" >
+      Sony Ericsson K550i
+	  <input class="form-check-input" type="checkbox" value="Samsung Avilla" id="g" >
+      Samsung Avilla
+	  <input class="form-check-input" type="checkbox" value="Samsung S21 Super Pro Plus Supreme" id="h" >
+      Samsung S21 Super Pro Plus Supreme
+    </div>  
+  </div>
+  <div class="row bg-dark text-light mx-0">
+    <div class="col mx-0">
+	Forma zapłaty:
+      <input name="zaplata" class="form-check-input" type="radio" value="przelew" id="przelew" required>
+      Przelew
+	  <input name="zaplata" class="form-check-input" type="radio" value="blik" id="blik" required>
+      BLIK
+	  <input name="zaplata" class="form-check-input" type="radio" value="gotowka" id="gotowka" required>
+      Gotówka
+    </div>  
+  </div>
+   <div class="row bg-dark text-light mx-0">
+    <div class="col">
+    <input type="submit" value="" style="visibility: hidden;"> <button class="btn btn-primary bg-light text-dark"  >Zamów</button></input>
+    </div>
+  </div>
+  </form>
+
+	
+
+<div class="card">
+  <div id="slideshow">
+		<img src="zdj/kurier1.jpg" alt="image1" class="active"  />
+		<img src="zdj/kurier2.jpg" alt="image2"  />
+		<img src="zdj/kurier3.jpg" alt="image3" />
+ </div>
+</div>
+
+<footer class="bg-light text-center text-lg-start">
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2022 eGSM Copyright:
+    <a class="text-dark" href="https://pollub.pl">Politechnika Lubelska</a>
+  </div>
+</footer><!-- Carousel wrapper -->
+
+
+</body>
+</html>
